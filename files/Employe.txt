@@ -1,0 +1,4 @@
+1,john,doe,john@email.com
+2,mary,public,mary@email.com
+3,ram,sita,ram@emil.co
+1,sup,ram,adwd@dd.com
