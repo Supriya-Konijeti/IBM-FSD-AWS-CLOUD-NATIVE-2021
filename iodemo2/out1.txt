@@ -1,0 +1,4 @@
+Open source
+Security
+Git clone vulnerability announced
+Today, the Git project released new versions to address CVE-2021-21300: a security vulnerability in the delayed checkout mechanism used by Git LFS during git clone operations affecting versions 2.15 and newer. These updates address an
