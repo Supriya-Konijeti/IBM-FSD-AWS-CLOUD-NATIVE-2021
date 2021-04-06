@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Account Directory</title>
+</head>
+<body>
+<div class="container">
+    <h3>Account Directory</h3>
+    <hr>
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Action</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="tempaccount : ${accountmodels}">
+
+            <td th:text="${tempaccount.firstName}" />
+            <td th:text="${tempaccount.lastName}" />
+            <td th:text="${tempaccount.email}" />
+
+            <!-- Add update button/link -->
+            <td>
+                <a th:href="@{/accountmodels/showFormForUpdate(employeeId=${tempaccount.accountId})}"
+                   class="btn btn-info btn-sm">
+                    Update
+                </a>
+            </td>
+            <td>
+                <a th:href="@{/accountmodels/delete(accountId=${tempAccount.accountId})}"
+                   class="btn btn-danger btn-sm">
+                    Delete
+                </a>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>
