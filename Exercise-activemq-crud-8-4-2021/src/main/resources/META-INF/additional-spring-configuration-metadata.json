@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "eureka.client.defaultZone",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.client.defaultZone'"
+  },
+  {
+    "name": "eureka.instance-id",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.instance-id'"
+  },
+  {
+    "name": "spring.devtools.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'spring.devtools.enabled'"
+  }
+]}

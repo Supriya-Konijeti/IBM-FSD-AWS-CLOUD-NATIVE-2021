@@ -3,21 +3,12 @@ package com.example.demo.repo;
 import com.example.demo.exception.EmployeeNotFoundException;
 import com.example.demo.model.Employee;
 
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
+import org.springframework.stereotype.Service;
 import java.util.*;
 
 @Service
-public abstract class EmployeeRepoImpl implements EmployeeRepo {
+public class EmployeeRepoImpl implements EmployeeRepo {
     private EmployeeRepo employeeRepo;
     private Map<Integer, Employee> employeeMap;
     {
@@ -73,11 +64,5 @@ public abstract class EmployeeRepoImpl implements EmployeeRepo {
         return tempEmployee;
     }
 
-
-	@Override
-	public void deleteAllEmployees() {
-		// TODO Auto-generated method stub
-		employeeMap.remove(employeeMap.size()-1);
-	}
 
 }

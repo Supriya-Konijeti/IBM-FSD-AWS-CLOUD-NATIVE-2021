@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>Exercise-activemq-crud-8-4-2021</artifactId>
+	<artifactId>activemq-receiver-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Exercise-activemq-crud-8-4-2021</name>
-	<description>ActiveMq exercise</description>
+	<name>activemq-receiver-service</name>
+	<description>ActiveMq demo</description>
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Hoxton.SR10</spring-cloud.version>
@@ -24,14 +24,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
@@ -40,11 +32,6 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

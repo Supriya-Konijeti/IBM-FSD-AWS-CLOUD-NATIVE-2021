@@ -13,6 +13,6 @@ public class JmsConfig {
 
     @Bean
     public Queue queue(){
-        return new ActiveMQQueue("customer-queue");
+        return new ActiveMQQueue("employee-queue");
     }
 }

@@ -5,6 +5,19 @@ spring:
     user: admin 
   application:
        name: activemq-sender
-       
+  
+  h2:
+   console:
+     enabled: true
+     settings:
+      web-allow-others: true
+  datasource:
+    url: jdbc:h2:mem:testDB
+    username: sa
+    password: sa
+eureka:
+  client:
+      defaultZone: http://localhost:8761/eureka/
+        
 server:
   port: 8081   

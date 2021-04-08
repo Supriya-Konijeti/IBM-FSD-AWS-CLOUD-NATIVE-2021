@@ -1,0 +1,22 @@
+spring:
+ activemq:
+    broker-url: tcp://LAPTOP-C1FSMA9E:61616
+    password: admin
+    user: admin 
+ application:
+       name: activemq-receiver
+  
+ h2:
+   console:
+     enabled: true
+     settings:
+      web-allow-others: true
+ datasource:
+    url: jdbc:h2:mem:testDB
+    username: sa
+    password: sa
+eureka:
+  client:
+     defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8082
